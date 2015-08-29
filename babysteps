@@ -1,0 +1,10 @@
+var arr = process.argv
+
+console.log(arr.reduce(function (a, v, i) {
+	if (i > 1) {
+		return a + Number(v)
+	} else {
+		return a
+	}
+}, 0)
+)
